@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <fieldset><legend>O que é DOM?</legend>
+        <p><strong>DOM</strong> é a estrutura do seu site</p>
+        <p>Aqui vai o resultado.</p>
+        <script>
+            /* Neste codigo abaixo voce vera que a seleção do DOM começa no window e para na taq P do paragrafo.
+            Porem ela termina na verdade na taq strong que é filha da taq P*/
+            var p1 = window.document.getElementsByTagName("p")[1]
+            window.document.write('Esta escrito isto na taq p de na posição 1: ' + p1.innerHTML)
+            // Podemos editar atraves do JavaScript
+            p1.style.color = 'blue'
+        </script>
+    </fieldset>
+</body>
+</html>

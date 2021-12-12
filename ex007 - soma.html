@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+        }
+        input#txtn1, input#txtn2{
+            font: normal 17px Arial;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digite os valores a serem somados</h1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <br>
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            res = n1 + n2
+            var s = window.document.getElementById('res')
+            s.innerHTML = `A soma entre os valores ${n1} e ${n2} é igual a ${res}`
+        }
+    </script>
+</body>
+</html>
