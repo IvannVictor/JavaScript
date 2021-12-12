@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        div#res{
+            font: normal 16pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade registrada: <input type="number" name="txtv" id="txtv">
+    <input type="button" value="Calcular" onclick="cal()">
+    <div id="res"></div>
+    <br>
+
+    <script>
+        function cal(){
+            var txtv = window.document.getElementById('txtv')
+            var res = window.document.getElementById('res')
+            var val = Number(txtv.value)
+            res.innerHTML = `<br>Velocidade registrada de ${val}KM/h`
+            if(val > 50){
+                res.innerHTML += ` <p>Voce esta acima da velocidade permitida de 50KM/h!! <strong>MULTADO</strong><p>`
+            }
+            res.innerHTML += '<p>Dirija sempre com cinto de segunraça<p>'
+        }
+    </script>
+</body>
+</html>

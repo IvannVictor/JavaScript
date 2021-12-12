@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigrantes</title>
+</head>
+<body>
+    <h1>Controle de entra no país</h1>
+    Qual a sua nacionalidade: <input type="text" name="txt" id="txt">
+    <input type="button" value="Verificar" onclick="nac()">
+    <div id='res'></div>
+    <script>
+        function nac(){
+            var naci = window.document.getElementById('txt')
+            var naci = String(naci.value)
+            var res = window.document.getElementById('res')
+            if(naci != "Brasil"){
+                res.innerHTML = 'Voce é estrangeiro! Seja bem-vindo'
+            }else{
+                res.innerHTML = 'Voce é BR!! Seja bem-vindo novamente'
+            }
+        }
+    </script>
+</body>
+</html>
