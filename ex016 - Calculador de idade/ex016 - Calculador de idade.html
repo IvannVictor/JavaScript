@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Calculadora de idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano de nascimento: 
+                <input type="number" name="txtnun" id="txtnun">
+            </p>
+
+            <p>Sexo:
+                <input type="radio" name="rds" id="rdm" checked>
+                <label for="rdm">Masculino</label>
+                <input type="radio" name="rds" id="rdf">
+                <label for="rdf">Feminino</label>
+            </p>
+
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+
+        </div>
+
+        <div id='res'>
+            Preencha os dados acima para que possa ver o resultado!!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Modelo criado junto das aulas do <a href="https://www.cursoemvideo.com/curso/javascript/">Curso em video</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
